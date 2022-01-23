@@ -1105,4 +1105,6 @@
 
   <!-- ProtonAOSP changes -->
   <include name="proton.xml"/>
+  <include name="remove.xml"/>
+  <include name="violet.xml"/>
 </manifest>
