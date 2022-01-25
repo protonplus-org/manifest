@@ -25,9 +25,12 @@
   </project>
 
   <!-- external repos -->
+  <project name="external_e2fsprogs" path="external/e2fsprogs" remote="ProtonAOSP-SM6150" revision="sc"/>
   <project name="LineageOS/android_external_exfatprogs" path="external/exfatprogs"  remote="github" revision="lineage-18.1"/>
+  <project name="external_gptfdisk" path="external/gptfdisk" remote="ProtonAOSP-SM6150" revision="sc"/>
   <project name="LineageOS/android_external_json-c" path="external/json-c" remote="github"  revision="lineage-18.1"   />
   <project name="aosp-stuff/platform_external_libbfqio" path="external/libbfqio" remote="github" revision="android-11"/>
+  <project name="external_mksh" path="external/mksh" remote="ProtonAOSP-SM6150" revision="sc"/>
   <project name="external_selinux" path="external/selinux" remote="ProtonAOSP-SM6150" revision="sc"/>
   <project name="external_tinycompress" path="external/tinycompress" remote="ProtonAOSP-SM6150" revision="sc"/>
   
