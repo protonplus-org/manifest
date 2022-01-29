@@ -25,6 +25,7 @@
   </project>
 
   <!-- external repos -->
+  <project name="GrapheneOS/platform_external_Camera" path="external/Camera" remote="github" revision="12" />
   <project name="external_e2fsprogs" path="external/e2fsprogs" remote="ProtonAOSP-SM6150" revision="sc"/>
   <project name="LineageOS/android_external_exfatprogs" path="external/exfatprogs"  remote="github" revision="lineage-18.1"/>
   <project name="external_gptfdisk" path="external/gptfdisk" remote="ProtonAOSP-SM6150" revision="sc"/>
