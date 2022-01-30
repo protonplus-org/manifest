@@ -65,7 +65,7 @@
   <project name="system_vold" path="system/vold" remote="ProtonAOSP-SM6150" revision="sc"/>
 
   <!-- vendor gapps-->
-  <project name="conqueros/vendor_gms" path="vendor/gms" remote="gitlab" revision="twelve" />
+  <project name="roku-senpai/vendor_gms" path="vendor/gms" remote="gitlab-ssh" revision="cq/1" />
 
   <!-- vendor proton-->
   <project name="vendor_proton" path="vendor/proton" remote="ProtonAOSP-SM6150" revision="sc" />
