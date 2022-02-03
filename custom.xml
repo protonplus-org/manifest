@@ -2,6 +2,7 @@
 <manifest>
 
   <remote name="ProtonAOSP-SM6150" fetch="https://github.com/ProtonAOSP-SM6150" revision="sc" />
+  <remote name="ProtonAOSP-SM6150-ssh" fetch="ssh://git@github.com/ProtonAOSP-SM6150" revision="sc" />
 
   <!-- ant -->
   <project name="LineageOS/android_external_ant-wireless_ant_client" path="external/ant-wireless/ant_client" remote="github" revision="lineage-18.1" />
@@ -40,6 +41,7 @@
   <project name="frameworks_base" path="frameworks/base" remote="ProtonAOSP-SM6150" revision="sc" />
 
   <!--hardware -->
+  <project name="hardware_google_pixel" path="hardware/google/pixel" remote="ProtonAOSP-SM6150" revision="sc"/>
   <project name="hardware_interfaces" path="hardware/interfaces" remote="ProtonAOSP-SM6150" revision="sc"/>
   <project name="hardware_libhardware" path="hardware/libhardware" remote="ProtonAOSP-SM6150" revision="sc"/>
 
@@ -47,11 +49,16 @@
   <project name="aosp-stuff/platform_hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="github" revision="android-11" />
   <project name="aosp-stuff/platform_hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display"  remote="github" revision="android-12" />
   <project name="aosp-stuff/platform_hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="github" revision="android-11" />
+  <project name="hardware_qcom-caf_sm8350_audio" path="hardware/qcom-caf/sm8350/audio" remote="ProtonAOSP-SM6150-ssh" revision="sc" />
+  <project name="hardware_qcom-caf_sm8350_display" path="hardware/qcom-caf/sm8350/display"  remote="ProtonAOSP-SM6150-ssh" revision="sc" />
+  <project name="hardware_qcom-caf_sm8350_media" path="hardware/qcom-caf/sm8350/media" remote="ProtonAOSP-SM6150-ssh" revision="sc" />
   <project name="StyxProject/hardware_qcom_wlan" path="hardware/qcom-caf/wlan"  remote="github" revision="S" />
   <project name="StyxProject/hardware_qcom-caf_common" path="hardware/qcom-caf/common" remote="github" revision="S">
   <!-- add guards for CAF repositories -->
       <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
       <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+      <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
   </project>
   
   <!-- packages -->
