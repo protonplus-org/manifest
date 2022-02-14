@@ -66,7 +66,8 @@
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="ProtonAOSP-SM6150" revision="sc" />
   <project name="android_packages_modules_Connectivity" path="packages/modules/Connectivity" remote="ProtonAOSP-SM6150" revision="sc" />
   <project name="android_packages_modules_Wifi" path="packages/modules/Wifi" remote="ProtonAOSP-SM6150" revision="sc"/>
-
+  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings"  remote="github"  revision="lineage-19.0" />
+  
   <!-- sepolicy -->
   <project name="P-404/android_device_404_sepolicy" path="device/404/sepolicy" remote="github-ssh" revision="shinka" />
   <project name="rokusenpaislab/android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="github-ssh" revision="shinka" />
