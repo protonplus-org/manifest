@@ -5,12 +5,15 @@
   <remote name="ProtonAOSP-Plus-ssh" fetch="ssh://git@github.com/ProtonAOSP-Plus" revision="sc" />
 
   <!-- ant -->
-  <project name="LineageOS/android_external_ant-wireless_ant_client" path="external/ant-wireless/ant_client" remote="github" revision="lineage-18.1" />
-  <project name="LineageOS/android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="lineage-18.1"  />
-  <project name="LineageOS/android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service"  remote="github"  revision="lineage-18.1" />
-  <project name="LineageOS/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library"  remote="github" revision="lineage-18.1"  />
-  <project name="LineageOS/android_external_ant-wireless_hidl" path="external/ant-wireless/hidl" remote="github" revision="lineage-18.1" />
+  <project name="LineageOS/android_external_ant-wireless_ant_client" path="external/ant-wireless/ant_client" remote="github" revision="lineage-19.0" />
+  <project name="LineageOS/android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="lineage-19.0"  />
+  <project name="LineageOS/android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service"  remote="github"  revision="lineage-19.0" />
+  <project name="LineageOS/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library"  remote="github" revision="lineage-19.0"  />
+  <project name="LineageOS/android_external_ant-wireless_hidl" path="external/ant-wireless/hidl" remote="github" revision="lineage-19.0" />
 
+  <!-- bionic -->
+  <project name="bionic" path="bionic" remote="ProtonAOSP-Plus" revision="sc" />
+  
   <!-- bootable -->
   <project name="bootable_recovery" path="bootable/recovery" remote="ProtonAOSP-Plus" revision="sc" />
 
@@ -24,14 +27,17 @@
       <linkfile src="target" dest="build/target" />
       <linkfile src="tools" dest="build/tools" />
   </project>
+  <project name="build_soong" path="build/soong" remote="ProtonAOSP-Plus" revision="sc">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
 
   <!-- external repos -->
   <project name="GrapheneOS/platform_external_Camera" path="external/Camera" remote="github" revision="12" />
   <project name="external_e2fsprogs" path="external/e2fsprogs" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="LineageOS/android_external_exfatprogs" path="external/exfatprogs"  remote="github" revision="lineage-18.1"/>
+  <project name="LineageOS/android_external_exfatprogs" path="external/exfatprogs"  remote="github" revision="lineage-19.0"/>
   <project name="external_gptfdisk" path="external/gptfdisk" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="LineageOS/android_external_json-c" path="external/json-c" remote="github"  revision="lineage-18.1"   />
-  <project name="aosp-stuff/platform_external_libbfqio" path="external/libbfqio" remote="github" revision="android-11"/>
+  <project name="LineageOS/android_external_json-c" path="external/json-c" remote="github"  revision="lineage-19.0"   />
   <project name="external_mksh" path="external/mksh" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="external_selinux" path="external/selinux" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="external_tinycompress" path="external/tinycompress" remote="ProtonAOSP-Plus" revision="sc"/>
@@ -47,14 +53,14 @@
   <project name="LineageOS/android_hardware_xiaomi" path="hardware/xiaomi" remote="github-ssh" revision="lineage-19.0" />
 
   <!-- hal -->
-  <project name="aosp-stuff/platform_hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="github" revision="android-11" />
-  <project name="aosp-stuff/platform_hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display"  remote="github" revision="android-12" />
-  <project name="aosp-stuff/platform_hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="github" revision="android-11" />
-  <project name="hardware_qcom-caf_sm8350_audio" path="hardware/qcom-caf/sm8350/audio" remote="ProtonAOSP-Plus-ssh" revision="sc" />
-  <project name="hardware_qcom-caf_sm8350_display" path="hardware/qcom-caf/sm8350/display"  remote="ProtonAOSP-Plus-ssh" revision="sc" />
-  <project name="hardware_qcom-caf_sm8350_media" path="hardware/qcom-caf/sm8350/media" remote="ProtonAOSP-Plus-ssh" revision="sc" />
-  <project name="StyxProject/hardware_qcom_wlan" path="hardware/qcom-caf/wlan"  remote="github" revision="S" />
-  <project name="StyxProject/hardware_qcom-caf_common" path="hardware/qcom-caf/common" remote="github" revision="S">
+  <project name="LineageOS/android_hardware_qcom_audio" path="hardware/qcom-caf/sm8150/audio" remote="github" revision="lineage-19.0-caf-sm8150" />
+  <project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom-caf/sm8150/display"  remote="github" revision="lineage-19.0-caf-sm8150" />
+  <project name="LineageOS/android_hardware_qcom_media" path="hardware/qcom-caf/sm8150/media" remote="github" revision="lineage-19.0-caf-sm8150" />
+  <project name="LineageOS/android_hardware_qcom_audio" path="hardware/qcom-caf/sm8350/audio" remote="github" revision="lineage-19.0-caf-sm8350" />
+  <project name="LineageOS/android_hardware_qcom_display" path="hardware/qcom-caf/sm8350/display" remote="github" revision="lineage-19.0-caf-sm8350" />
+  <project name="LineageOS/android_hardware_qcom_media" path="hardware/qcom-caf/sm8350/media" remote="github" revision="lineage-19.0-caf-sm8350" />
+  <project name="LineageOS/android_hardware_qcom_wlan" path="hardware/qcom-caf/wlan"  remote="github" revision="lineage-19.0-caf" />
+  <project name="LineageOS/android_hardware_qcom-caf_common" path="hardware/qcom-caf/common" remote="github" revision="lineage-19.0">
   <!-- add guards for CAF repositories -->
       <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
       <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
@@ -68,6 +74,9 @@
   <project name="packages_modules_Wifi" path="packages/modules/Wifi" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings"  remote="github"  revision="lineage-19.0" />
   
+  <!-- Prebuilts --> 
+  <project name="LineageOS/android_prebuilts_tools-lineage"  path="prebuilts/tools-proton" remote="github" revision="lineage-19.0"  clone-depth="1" />
+  
   <!-- sepolicy -->
   <project name="P-404/android_device_404_sepolicy" path="device/404/sepolicy" remote="github-ssh" revision="shinka" />
   <project name="rokusenpaislab/android_device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="github-ssh" revision="shinka" />
@@ -75,6 +84,7 @@
 
   <!-- system -->
   <project name="system_core" path="system/core" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="LineageOS/android_system_qcom" path="system/qcom" remote="github" revision="lineage-18.1"/>
   <project name="system_security" path="system/security" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="system_vold" path="system/vold" remote="ProtonAOSP-Plus" revision="sc"/>
 
@@ -88,14 +98,15 @@
   <project name="vendor_support" path="vendor/support" remote="ProtonAOSP-Plus" revision="sc" />
 
   <!-- Vendor QCOM-->
-  <project name="StyxProject/vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="S" />
-  <project name="LineageOS/android_vendor_qcom_opensource_audio" path="vendor/qcom/opensource/audio" remote="github" revision="lineage-18.1"  />
+  <project name="LineageOS/android_vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="lineage-19.0" />
+  <project name="LineageOS/android_vendor_qcom_opensource_audio" path="vendor/qcom/opensource/audio" remote="github" revision="lineage-19.0"  />
   <project name="vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="ProtonAOSP-Plus" revision="sc" />
-  <project name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display"  remote="github" revision="lineage-18.1"  />
-  <project name="hentaiOS/platform_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github" revision="SaltyIceCream" />
-  <project name="hentaiOS/platform_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices"  remote="github" revision="SaltyIceCream"  />
-  <project name="LineageOS/android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="lineage-18.1"  />
-  <project name="LineageOS/android_vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine"  remote="github" revision="lineage-18.1"  />
-  <project name="StyxProject/vendor_qcom-opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="github" revision="S" />
+  <project name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display"  remote="github" revision="lineage-19.0"  />
+  <project name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github" revision="lineage-19.0" />
+  <project name="LineageOS/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices"  remote="github" revision="lineage-19.0"  />
+  <project name="LineageOS/android_vendor_qcom_opensource_display" path="vendor/qcom/opensource/display"  remote="github" revision="lineage-19.0"  />
+  <project name="LineageOS/android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="lineage-19.0"  />
+  <project name="LineageOS/android_vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine"  remote="github" revision="lineage-19.0"  />
+  <project name="LineageOS/android_vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="github" revision="lineage-19.0" />
 
 </manifest>
