@@ -73,6 +73,7 @@
   <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="packages_modules_Wifi" path="packages/modules/Wifi" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings"  remote="github"  revision="lineage-19.0" />
+  <project name="packages_services_Telecomm" path="packages/services/Telecomm"  remote="ProtonAOSP-Plus" revision="sc" />
   
   <!-- Prebuilts --> 
   <project name="LineageOS/android_prebuilts_tools-lineage"  path="prebuilts/tools-proton" remote="github" revision="lineage-19.0"  clone-depth="1" />
