@@ -45,6 +45,7 @@
   <!-- frameworks -->
   <project name="frameworks_av" path="frameworks/av" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="frameworks_base" path="frameworks/base" remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="frameworks_native" path="frameworks/native" remote="ProtonAOSP-Plus" revision="sc" />
 
   <!--hardware -->
   <project name="hardware_google_pixel" path="hardware/google/pixel" remote="ProtonAOSP-Plus" revision="sc"/>
@@ -68,6 +69,7 @@
   </project>
   
   <!-- packages -->
+   <project name="packages_apps_Dialer" path="packages/apps/Dialer" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="packages_modules_Wifi" path="packages/modules/Wifi" remote="ProtonAOSP-Plus" revision="sc"/>

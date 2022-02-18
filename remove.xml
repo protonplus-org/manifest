@@ -67,6 +67,7 @@
   <!-- frameworks -->
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/frameworks/native" />
 
   <!-- hardware -->
   <remove-project name="platform/hardware/google/pixel" />
@@ -110,6 +111,7 @@
   <remove-project name="platform/hardware/qcom/wlan" />
 
   <!-- packages -->
+  <remove-project name="platform/packages/apps/Dialer" />
   <remove-project name="platform/packages/apps/Settings" />
   <remove-project name="platform/packages/modules/Connectivity" />
   <remove-project name="platform/packages/modules/Wifi" />
