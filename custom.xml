@@ -5,11 +5,11 @@
   <remote name="ProtonAOSP-Plus-ssh" fetch="ssh://git@github.com/ProtonAOSP-Plus" revision="sc" />
 
   <!-- ant -->
-  <project name="LineageOS/android_external_ant-wireless_ant_client" path="external/ant-wireless/ant_client" remote="github" revision="lineage-18.1" />
-  <project name="LineageOS/android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="lineage-18.1"  />
-  <project name="LineageOS/android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service"  remote="github"  revision="lineage-18.1" />
-  <project name="LineageOS/android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library"  remote="github" revision="lineage-18.1"  />
-  <project name="LineageOS/android_external_ant-wireless_hidl" path="external/ant-wireless/hidl" remote="github" revision="lineage-18.1" />
+  <project name="PixelExperience/external_ant-wireless_ant_client" path="external/ant-wireless/ant_client" remote="github" revision="twelve" />
+  <project name="PixelExperience/external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="twelve"  />
+  <project name="PixelExperience/external_ant-wireless_ant_service" path="external/ant-wireless/ant_service"  remote="github"  revision="twelve" />
+  <project name="PixelExperience/external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library"  remote="github" revision="twelve"  />
+  <project name="PixelExperience/external_ant-wireless_hidl" path="external/ant-wireless/hidl" remote="github" revision="twelve" />
 
   <!-- bionic -->
   <project name="bionic" path="bionic" remote="ProtonAOSP-Plus" revision="sc" />
@@ -35,9 +35,9 @@
   <!-- external repos -->
   <project name="GrapheneOS/platform_external_Camera" path="external/Camera" remote="github" revision="12" />
   <project name="external_e2fsprogs" path="external/e2fsprogs" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="LineageOS/android_external_exfatprogs" path="external/exfatprogs"  remote="github" revision="lineage-18.1"/>
+  <project name="PixelExperience/external_exfatprogs" path="external/exfatprogs"  remote="github" revision="twelve"/>
   <project name="external_gptfdisk" path="external/gptfdisk" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="LineageOS/android_external_json-c" path="external/json-c" remote="github"  revision="lineage-18.1"   />
+  <project name="PixelExperience/external_json-c" path="external/json-c" remote="github"  revision="twelve"   />
   <project name="external_mksh" path="external/mksh" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="external_selinux" path="external/selinux" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="external_tinycompress" path="external/tinycompress" remote="ProtonAOSP-Plus" revision="sc"/>
@@ -69,7 +69,7 @@
   </project>
   
   <!-- packages -->
-   <project name="packages_apps_Dialer" path="packages/apps/Dialer" remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="packages_apps_Dialer" path="packages/apps/Dialer" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="packages_modules_Wifi" path="packages/modules/Wifi" remote="ProtonAOSP-Plus" revision="sc"/>
@@ -86,7 +86,7 @@
 
   <!-- system -->
   <project name="system_core" path="system/core" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="LineageOS/android_system_qcom" path="system/qcom" remote="github" revision="lineage-18.1"/>
+  <project name="PixelExperience/system_qcom" path="system/qcom" remote="github" revision="twelve"/>
   <project name="system_security" path="system/security" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="system_vold" path="system/vold" remote="ProtonAOSP-Plus" revision="sc"/>
 
@@ -101,13 +101,15 @@
 
   <!-- Vendor QCOM-->
   <project name="vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="LineageOS/android_vendor_qcom_opensource_audio" path="vendor/qcom/opensource/audio" remote="github" revision="lineage-18.1"  />
+  <project name="PixelExperience/vendor_qcom_opensource_audio" path="vendor/qcom/opensource/audio" remote="github" revision="twelve"  />
   <project name="vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="ProtonAOSP-Plus" revision="sc" />
-  <project name="LineageOS/android_vendor_qcom_opensource_display-commonsys-intf" path="vendor/qcom/opensource/commonsys-intf/display"  remote="github" revision="lineage-18.1"  />
-  <project name="LineageOS/android_vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github" revision="lineage-18.1" />
-  <project name="LineageOS/android_vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices"  remote="github" revision="lineage-18.1"  />
-  <project name="LineageOS/android_vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="lineage-18.1"  />
-  <project name="LineageOS/android_vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine"  remote="github" revision="lineage-18.1"  />
+  <project name="PixelExperience/vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display"  remote="github" revision="twelve"  />
+  <project name="PixelExperience/vendor_qcom_opensource_commonsys_display" path="vendor/qcom/opensource/commonsys/display" remote="github" revision="twelve"/>
+  <project name="PixelExperience/vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github" revision="twelve" />
+  <project name="PixelExperience/vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices"  remote="github" revision="twelve"  />
+  <project name="PixelExperience/vendor_qcom_opensource_display" path="vendor/qcom/opensource/display"  remote="github" revision="twelve" />
+  <project name="PixelExperience/vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="twelve"  />
+  <project name="PixelExperience/vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine"  remote="github" revision="twelve"  />
   <project name="vendor_qcom-opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="ProtonAOSP-Plus" revision="sc"/>
 
 </manifest>
