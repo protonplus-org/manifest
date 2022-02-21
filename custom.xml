@@ -55,14 +55,25 @@
   <project name="hardware_xiaomi" path="hardware/xiaomi" remote="ProtonAOSP-Plus" revision="sc" />
 
   <!-- hal -->
-  <project name="hardware_qcom-caf_audio" path="hardware/qcom-caf/sm8150/audio" remote="ProtonAOSP-Plus" revision="sc-sm8150" />
-  <project name="hardware_qcom-caf_display" path="hardware/qcom-caf/sm8150/display"  remote="ProtonAOSP-Plus" revision="sc-sm8150" />
-  <project name="hardware_qcom-caf_media" path="hardware/qcom-caf/sm8150/media" remote="ProtonAOSP-Plus" revision="sc-sm8150" />
-  <project name="hardware_qcom-caf_wlan" path="hardware/qcom-caf/wlan"  remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8150_display" path="hardware/qcom-caf/sm8150/display" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8150_media" path="hardware/qcom-caf/sm8150/media" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8150-common_audio" path="hardware/qcom-caf/sm8150-common/audio" remote="github" revision="twelve"  />
+  <project name="PixelExperience/hardware_qcom-caf_sm8150-common_display" path="hardware/qcom-caf/sm8150-common/display" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8150-common_media" path="hardware/qcom-caf/sm8150-common/media" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8250_audio" path="hardware/qcom-caf/sm8250/audio" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8250_display" path="hardware/qcom-caf/sm8250/display" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8250_media" path="hardware/qcom-caf/sm8250/media" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8350_audio" path="hardware/qcom-caf/sm8350/audio" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8350_display" path="hardware/qcom-caf/sm8350/display" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_sm8350_media" path="hardware/qcom-caf/sm8350/media" remote="github" revision="twelve" />
+  <project name="PixelExperience/hardware_qcom-caf_wlan" path="hardware/qcom-caf/wlan" remote="github" revision="twelve" />
   <project name="hardware_qcom-caf_common" path="hardware/qcom-caf/common" remote="ProtonAOSP-Plus" revision="sc">
   <!-- add guards for CAF repositories -->
       <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
       <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+      <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150-common/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150-common/Android.mk" />
       <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
       <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
       <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
@@ -74,7 +85,7 @@
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="packages_modules_Wifi" path="packages/modules/Wifi" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="LineageOS/android_packages_resources_devicesettings" path="packages/resources/devicesettings"  remote="github"  revision="lineage-19.0" />
+  <project name="PixelExperience/packages_resources_devicesettings" path="packages/resources/devicesettings"  remote="github" revision="twelve" />
   <project name="packages_services_Telecomm" path="packages/services/Telecomm"  remote="ProtonAOSP-Plus" revision="sc" />
   
   <!-- Prebuilts --> 
@@ -101,7 +112,7 @@
   <project name="vendor_support" path="vendor/support" remote="ProtonAOSP-Plus" revision="sc" />
 
   <!-- Vendor QCOM-->
-  <project name="vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="PixelExperience/vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_audio" path="vendor/qcom/opensource/audio" remote="github" revision="twelve"  />
   <project name="vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="PixelExperience/vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display"  remote="github" revision="twelve"  />
@@ -111,7 +122,8 @@
   <project name="PixelExperience/vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices"  remote="github" revision="twelve"  />
   <project name="PixelExperience/vendor_qcom_opensource_display" path="vendor/qcom/opensource/display"  remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="twelve"  />
+  <project name="PixelExperience/vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine"  remote="github" revision="twelve"  />
-  <project name="vendor_qcom-opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="PixelExperience/vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="github" revision="twelve" />
 
 </manifest>
