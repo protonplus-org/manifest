@@ -48,6 +48,7 @@
   <project name="frameworks_native" path="frameworks/native" remote="ProtonAOSP-Plus" revision="sc" />
 
   <!--hardware -->
+  <project name="PixelExperience/hardware_custom_interfaces" path="hardware/custom/interfaces" remote="github" revision="twelve" />
   <project name="hardware_google_pixel" path="hardware/google/pixel" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="hardware_interfaces" path="hardware/interfaces" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="hardware_libhardware" path="hardware/libhardware" remote="ProtonAOSP-Plus" revision="sc"/>
@@ -105,6 +106,7 @@
   <project name="vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="PixelExperience/vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display"  remote="github" revision="twelve"  />
   <project name="PixelExperience/vendor_qcom_opensource_commonsys_display" path="vendor/qcom/opensource/commonsys/display" remote="github" revision="twelve"/>
+  <project name="PixelExperience/vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices"  remote="github" revision="twelve"  />
   <project name="PixelExperience/vendor_qcom_opensource_display" path="vendor/qcom/opensource/display"  remote="github" revision="twelve" />
