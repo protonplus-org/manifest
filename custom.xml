@@ -93,9 +93,6 @@
   <!-- vendor gapps-->
   <project name="roku-senpai/vendor_gms" path="vendor/gms" remote="gitlab-ssh" revision="cq/1" />
 
-  <!-- vendor pixel-framework -->
-  <project name="PixelExperience/vendor_pixel-framework" path="vendor/pixel-framework" remote="github" revision="twelve" />
-
   <!-- vendor proton-->
   <project name="vendor_proton" path="vendor/proton" remote="ProtonAOSP-Plus" revision="sc" />
   
