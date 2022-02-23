@@ -4,6 +4,9 @@
   <remote name="ProtonAOSP-Plus" fetch="https://github.com/ProtonAOSP-Plus" revision="sc" />
   <remote name="ProtonAOSP-Plus-ssh" fetch="ssh://git@github.com/ProtonAOSP-Plus" revision="sc" />
 
+   <!-- bionic -->
+  <project name="art" path="art" remote="ProtonAOSP-Plus" revision="sc" />
+
   <!-- ant -->
   <project name="PixelExperience/external_ant-wireless_ant_client" path="external/ant-wireless/ant_client" remote="github" revision="twelve" />
   <project name="PixelExperience/external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="github" revision="twelve"  />
@@ -100,6 +103,7 @@
   <project name="system_core" path="system/core" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="PixelExperience/system_qcom" path="system/qcom" remote="github" revision="twelve"/>
   <project name="system_security" path="system/security" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="system_sepolicy" path="system/sepolicy" remote="ProtonAOSP-Plus" revision="sc"/>
   <project name="system_vold" path="system/vold" remote="ProtonAOSP-Plus" revision="sc"/>
 
   <!-- vendor gapps-->
@@ -114,6 +118,7 @@
   <!-- Vendor QCOM-->
   <project name="PixelExperience/vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_audio" path="vendor/qcom/opensource/audio" remote="github" revision="twelve"  />
+  <project name="PixelExperience/vendor_qcom_opensource_audio-hal_st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" remote="github" revision="twelve"  />
   <project name="vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="ProtonAOSP-Plus" revision="sc" />
   <project name="PixelExperience/vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display"  remote="github" revision="twelve"  />
   <project name="PixelExperience/vendor_qcom_opensource_commonsys_display" path="vendor/qcom/opensource/commonsys/display" remote="github" revision="twelve"/>
@@ -121,7 +126,7 @@
   <project name="PixelExperience/vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices"  remote="github" revision="twelve"  />
   <project name="PixelExperience/vendor_qcom_opensource_display" path="vendor/qcom/opensource/display"  remote="github" revision="twelve" />
-  <project name="PixelExperience/vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="github" revision="twelve"  />
+  <project name="vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="ProtonAOSP-Plus" revision="sc"  />
   <project name="PixelExperience/vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine"  remote="github" revision="twelve"  />
   <project name="PixelExperience/vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="github" revision="twelve" />
