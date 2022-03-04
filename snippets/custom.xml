@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <remote name="ProtonAOSP-Plus" fetch="https://github.com/ProtonAOSP-Plus" revision="sc" />
-  <remote name="ProtonAOSP-Plus-ssh" fetch="ssh://git@github.com/ProtonAOSP-Plus" revision="sc" />
+  <remote name="ProtonPlus" fetch="https://github.com/protonplus-org" revision="sc" />
+  <remote name="ProtonPlus-ssh" fetch="ssh://git@github.com/protonplus-org" revision="sc" />
 
    <!-- bionic -->
-  <project name="art" path="art" remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="art" path="art" remote="ProtonPlus" revision="sc" />
 
   <!-- ant -->
   <project name="PixelExperience/external_ant-wireless_ant_client" path="external/ant-wireless/ant_client" remote="github" revision="twelve" />
@@ -15,13 +15,13 @@
   <project name="PixelExperience/external_ant-wireless_hidl" path="external/ant-wireless/hidl" remote="github" revision="twelve" />
 
   <!-- bionic -->
-  <project name="bionic" path="bionic" remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="bionic" path="bionic" remote="ProtonPlus" revision="sc" />
   
   <!-- bootable -->
-  <project name="bootable_recovery" path="bootable/recovery" remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="bootable_recovery" path="bootable/recovery" remote="ProtonPlus" revision="sc" />
 
   <!-- build -->
-  <project name="build_make" path="build/make" remote="ProtonAOSP-Plus" revision="sc">
+  <project name="build_make" path="build/make" remote="ProtonPlus" revision="sc">
       <copyfile src="core/root.mk" dest="Makefile" />
       <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
       <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -30,32 +30,32 @@
       <linkfile src="target" dest="build/target" />
       <linkfile src="tools" dest="build/tools" />
   </project>
-  <project name="build_soong" path="build/soong" remote="ProtonAOSP-Plus" revision="sc">
+  <project name="build_soong" path="build/soong" remote="ProtonPlus" revision="sc">
     <linkfile src="root.bp" dest="Android.bp" />
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
   <!-- external repos -->
   <project name="GrapheneOS/platform_external_Camera" path="external/Camera" remote="github" revision="12" />
-  <project name="external_e2fsprogs" path="external/e2fsprogs" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="external_e2fsprogs" path="external/e2fsprogs" remote="ProtonPlus" revision="sc"/>
   <project name="PixelExperience/external_exfatprogs" path="external/exfatprogs"  remote="github" revision="twelve"/>
-  <project name="external_gptfdisk" path="external/gptfdisk" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="external_gptfdisk" path="external/gptfdisk" remote="ProtonPlus" revision="sc"/>
   <project name="PixelExperience/external_json-c" path="external/json-c" remote="github"  revision="twelve"   />
-  <project name="external_mksh" path="external/mksh" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="external_selinux" path="external/selinux" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="external_tinycompress" path="external/tinycompress" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="external_mksh" path="external/mksh" remote="ProtonPlus" revision="sc"/>
+  <project name="external_selinux" path="external/selinux" remote="ProtonPlus" revision="sc"/>
+  <project name="external_tinycompress" path="external/tinycompress" remote="ProtonPlus" revision="sc"/>
   
   <!-- frameworks -->
-  <project name="frameworks_av" path="frameworks/av" remote="ProtonAOSP-Plus" revision="sc" />
-  <project name="frameworks_base" path="frameworks/base" remote="ProtonAOSP-Plus" revision="sc" />
-  <project name="frameworks_native" path="frameworks/native" remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="frameworks_av" path="frameworks/av" remote="ProtonPlus" revision="sc" />
+  <project name="frameworks_base" path="frameworks/base" remote="ProtonPlus" revision="sc" />
+  <project name="frameworks_native" path="frameworks/native" remote="ProtonPlus" revision="sc" />
 
   <!--hardware -->
   <project name="PixelExperience/hardware_custom_interfaces" path="hardware/custom/interfaces" remote="github" revision="twelve" />
-  <project name="hardware_google_pixel" path="hardware/google/pixel" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="hardware_interfaces" path="hardware/interfaces" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="hardware_libhardware" path="hardware/libhardware" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="hardware_xiaomi" path="hardware/xiaomi" remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="hardware_google_pixel" path="hardware/google/pixel" remote="ProtonPlus" revision="sc"/>
+  <project name="hardware_interfaces" path="hardware/interfaces" remote="ProtonPlus" revision="sc"/>
+  <project name="hardware_libhardware" path="hardware/libhardware" remote="ProtonPlus" revision="sc"/>
+  <project name="hardware_xiaomi" path="hardware/xiaomi" remote="ProtonPlus" revision="sc" />
 
   <!-- hal -->
   <project name="PixelExperience/hardware_qcom-caf_sm8150_audio" path="hardware/qcom-caf/sm8150/audio" remote="github" revision="twelve" />
@@ -71,7 +71,7 @@
   <project name="PixelExperience/hardware_qcom-caf_sm8350_display" path="hardware/qcom-caf/sm8350/display" remote="github" revision="twelve" />
   <project name="PixelExperience/hardware_qcom-caf_sm8350_media" path="hardware/qcom-caf/sm8350/media" remote="github" revision="twelve" />
   <project name="PixelExperience/hardware_qcom-caf_wlan" path="hardware/qcom-caf/wlan" remote="github" revision="twelve" />
-  <project name="hardware_qcom-caf_common" path="hardware/qcom-caf/common" remote="ProtonAOSP-Plus" revision="sc">
+  <project name="hardware_qcom-caf_common" path="hardware/qcom-caf/common" remote="ProtonPlus" revision="sc">
   <!-- add guards for CAF repositories -->
       <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
       <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
@@ -84,49 +84,49 @@
   </project>
   
   <!-- packages -->
-  <project name="packages_apps_Dialer" path="packages/apps/Dialer" remote="ProtonAOSP-Plus" revision="sc" />
-  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="ProtonAOSP-Plus" revision="sc" />
-  <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="ProtonAOSP-Plus" revision="sc" />
-  <project name="packages_modules_Wifi" path="packages/modules/Wifi" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="packages_apps_Dialer" path="packages/apps/Dialer" remote="ProtonPlus" revision="sc" />
+  <project name="packages_apps_Settings" path="packages/apps/Settings" remote="ProtonPlus" revision="sc" />
+  <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="ProtonPlus" revision="sc" />
+  <project name="packages_modules_Wifi" path="packages/modules/Wifi" remote="ProtonPlus" revision="sc"/>
   <project name="PixelExperience/packages_resources_devicesettings" path="packages/resources/devicesettings"  remote="github" revision="twelve" />
-  <project name="packages_services_Telecomm" path="packages/services/Telecomm"  remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="packages_services_Telecomm" path="packages/services/Telecomm"  remote="ProtonPlus" revision="sc" />
   
   <!-- Prebuilts --> 
   <project name="LineageOS/android_prebuilts_tools-lineage"  path="prebuilts/tools-proton" remote="github" revision="lineage-19.0"  clone-depth="1" />
   
   <!-- sepolicy -->
-  <project name="device_proton_sepolicy" path="device/proton/sepolicy" remote="ProtonAOSP-Plus" revision="sc" />
-  <project name="device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="ProtonAOSP-Plus" revision="sc" />
-  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="device_proton_sepolicy" path="device/proton/sepolicy" remote="ProtonPlus" revision="sc" />
+  <project name="device_qcom_sepolicy_vndr" path="device/qcom/sepolicy_vndr" remote="ProtonPlus" revision="sc" />
+  <project name="device_qcom_sepolicy" path="device/qcom/sepolicy" remote="ProtonPlus" revision="sc"/>
 
   <!-- system -->
-  <project name="system_core" path="system/core" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="system_core" path="system/core" remote="ProtonPlus" revision="sc"/>
   <project name="PixelExperience/system_qcom" path="system/qcom" remote="github" revision="twelve"/>
-  <project name="system_security" path="system/security" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="system_sepolicy" path="system/sepolicy" remote="ProtonAOSP-Plus" revision="sc"/>
-  <project name="system_vold" path="system/vold" remote="ProtonAOSP-Plus" revision="sc"/>
+  <project name="system_security" path="system/security" remote="ProtonPlus" revision="sc"/>
+  <project name="system_sepolicy" path="system/sepolicy" remote="ProtonPlus" revision="sc"/>
+  <project name="system_vold" path="system/vold" remote="ProtonPlus" revision="sc"/>
 
   <!-- vendor gapps-->
   <project name="roku-senpai/vendor_gms" path="vendor/gms" remote="gitlab-ssh" revision="cq/1" />
 
   <!-- vendor proton-->
-  <project name="vendor_proton" path="vendor/proton" remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="vendor_proton" path="vendor/proton" remote="ProtonPlus" revision="sc" />
   
   <!-- vendor support -->
-  <project name="vendor_support" path="vendor/support" remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="vendor_support" path="vendor/support" remote="ProtonPlus" revision="sc" />
 
   <!-- Vendor QCOM-->
   <project name="PixelExperience/vendor_codeaurora_telephony" path="vendor/codeaurora/telephony" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_audio" path="vendor/qcom/opensource/audio" remote="github" revision="twelve"  />
   <project name="PixelExperience/vendor_qcom_opensource_audio-hal_st-hal" path="vendor/qcom/opensource/audio-hal/st-hal" remote="github" revision="twelve"  />
-  <project name="vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="ProtonAOSP-Plus" revision="sc" />
+  <project name="vendor_qcom_opensource_core-utils" path="vendor/qcom/opensource/core-utils" remote="ProtonPlus" revision="sc" />
   <project name="PixelExperience/vendor_qcom_opensource_commonsys-intf_display" path="vendor/qcom/opensource/commonsys-intf/display"  remote="github" revision="twelve"  />
   <project name="PixelExperience/vendor_qcom_opensource_commonsys_display" path="vendor/qcom/opensource/commonsys/display" remote="github" revision="twelve"/>
   <project name="PixelExperience/vendor_qcom_opensource_cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_dataservices" path="vendor/qcom/opensource/dataservices"  remote="github" revision="twelve"  />
   <project name="PixelExperience/vendor_qcom_opensource_display" path="vendor/qcom/opensource/display"  remote="github" revision="twelve" />
-  <project name="vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="ProtonAOSP-Plus" revision="sc"  />
+  <project name="vendor_qcom_opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="ProtonPlus" revision="sc"  />
   <project name="PixelExperience/vendor_qcom_opensource_power" path="vendor/qcom/opensource/power" remote="github" revision="twelve" />
   <project name="PixelExperience/vendor_qcom_opensource_thermal-engine" path="vendor/qcom/opensource/thermal-engine"  remote="github" revision="twelve"  />
   <project name="PixelExperience/vendor_qcom_opensource_vibrator" path="vendor/qcom/opensource/vibrator" remote="github" revision="twelve" />
