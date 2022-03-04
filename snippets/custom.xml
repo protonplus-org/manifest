@@ -86,8 +86,6 @@
   <!-- packages -->
   <project name="packages_apps_Dialer" path="packages/apps/Dialer" remote="ProtonPlus" revision="sc" />
   <project name="packages_apps_Settings" path="packages/apps/Settings" remote="ProtonPlus" revision="sc" />
-  <project name="packages_modules_Connectivity" path="packages/modules/Connectivity" remote="ProtonPlus" revision="sc" />
-  <project name="packages_modules_Wifi" path="packages/modules/Wifi" remote="ProtonPlus" revision="sc"/>
   <project name="PixelExperience/packages_resources_devicesettings" path="packages/resources/devicesettings"  remote="github" revision="twelve" />
   <project name="packages_services_Telecomm" path="packages/services/Telecomm"  remote="ProtonPlus" revision="sc" />
   
