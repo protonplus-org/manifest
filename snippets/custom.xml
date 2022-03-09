@@ -105,7 +105,7 @@
   <project name="system_vold" path="system/vold" remote="ProtonPlus" revision="sc"/>
 
   <!-- vendor gapps-->
-  <project name="roku-senpai/vendor_gms" path="vendor/gms" remote="gitlab-ssh" revision="cq/1" />
+  <project name="roku-senpai/vendor_gms" path="vendor/gms" remote="gitlab" revision="sc" />
 
   <!-- vendor proton-->
   <project name="vendor_proton" path="vendor/proton" remote="ProtonPlus" revision="sc" />
