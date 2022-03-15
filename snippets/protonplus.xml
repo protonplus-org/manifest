@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github" fetch="https://github.com" />
+  <remote name="github-ssh" fetch="ssh://git@github.com" />
+  <remote name="gitlab" fetch="https://gitlab.com" />
+  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
+  <remote name="ProtonPlus" fetch="https://github.com/protonplus-org" revision="sc-v2" />
+  <remote name="ProtonPlus-ssh" fetch="ssh://git@github.com/protonplus-org" revision="sc-v2" />
+ 
+  <!-- art -->
+  <project path="art" name="art" remote="ProtonPlus" revision="sc-v2" />
+
+  <!-- bionic -->
+  <project path="bionic" name="bionic" remote="ProtonPlus" revision="sc-v2" />
+
+  <!-- build -->
+  <project path="build/make" name="build_make" remote="ProtonPlus" revision="sc-v2" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="ProtonPlus" revision="sc-v2" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- bootable -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="ProtonPlus" revision="sc-v2"  />
+   
+  <!-- device -->
+  <project path="device/common" name="device_common" remote="ProtonPlus" revision="sc-v2"/>
+
+  <!-- external -->
+  <project path="external/android-nn-driver" name="external_android-nn-driver" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/armnn" name="external_armnn" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/bash" name="external_bash" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/Camera" name="GrapheneOS/platform_external_Camera" remote="github" revision="12.1" />
+  <project path="external/colorkt" name="external_colorkt" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="ProtonPlus" revision="sc-v2"/>
+  <project path="external/google-fonts/cutive-mono" name="external_google-fonts_cutive-mono" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/htop" name="external_htop" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/jemalloc_new" name="external_jemalloc_new" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/libncurses" name="external_libncurses" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/mksh" name="external_mksh"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/nano" name="external_nano" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/noto-fonts" name="external_noto-fonts" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/openssh" name="external_openssh" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/p7zip" name="external_p7zip"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/pigz" name="external_pigz" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/roboto-fonts" name="external_roboto-fonts" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/rsync" name="external_rsync"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/selinux" name="external_selinux" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/themelib" name="external_themelib" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/tinycompress" name="external_tinycompress"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/vim" name="external_vim" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/zip" name="external_zip" remote="ProtonPlus" revision="sc-v2" />
+  <project path="external/zlib-ng" name="external_zlib-ng"  remote="ProtonPlus" revision="sc-v2" />
+
+  <!-- frameworks -->
+  <project path="frameworks/av" name="frameworks_av" remote="ProtonPlus" revision="sc-v2"  />
+  <project path="frameworks/base" name="frameworks_base" remote="ProtonPlus" revision="sc-v2"  />
+  <project path="frameworks/native" name="frameworks_native" remote="ProtonPlus" revision="sc-v2"  />
+
+  <!-- hardware -->
+  <project path="hardware/google/pixel" name="hardware_google_pixel" remote="ProtonPlus" revision="sc-v2" />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="ProtonPlus" revision="sc-v2" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="ProtonPlus" revision="sc-v2" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="ProtonPlus" revision="sc-v2" />
+
+  <!-- hals -->
+  <project path="hardware/qcom-caf/common" name="hardware_qcom-caf_common" remote="ProtonPlus" revision="sc-v2">
+  <!-- add guards for CAF repositories -->
+      <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+      <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8150-common/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150-common/Android.mk" />
+      <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8250/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+      <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
+      <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+  </project>
+
+  <!-- libcore -->
+  <project path="libcore" name="libcore" remote="ProtonPlus" revision="sc-v2"/>
+
+  <!-- packages -->
+  <project path="packages/apps/Camera2" name="packages_apps_Camera2"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/ElmyraService" name="packages_apps_ElmyraService"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/GmsCompat" name="packages_apps_GmsCompat" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/Jelly" name="packages_apps_Jelly" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/ProtonWallpaperStub" name="packages_apps_ProtonWallpaperStub" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/SimpleDeviceConfig" name="packages_apps_SimpleDeviceConfig" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ProtonPlus" revision="sc-v2"  />
+
+  <!-- sepolicy -->
+  <project path="device/proton/sepolicy" name="device_proton_sepolicy"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ProtonPlus" revision="sc-v2"/>
+
+  <!-- system -->
+  <project path="system/core" name="system_core" remote="ProtonPlus" revision="sc-v2" />
+  <project path="system/security" name="system_security" remote="ProtonPlus" revision="sc-v2" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="ProtonPlus" revision="sc-v2"/>
+  <project path="system/vold" name="system_vold" remote="ProtonPlus" revision="sc-v2" />
+
+  <!-- tools -->
+  <project path="tools/extract-utils" name="tools_extract-utils" remote="ProtonPlus" revision="sc-v2" />
+
+  <!-- vendor gms -->
+  <project path="vendor/gms" name="roku-senpai/vendor_gms" remote="gitlab" revision="sc-v2" />
+
+  <!-- vendor lawnicons -->
+  <project path="vendor/lawnicons" name="vendor_lawnicons" remote="ProtonPlus" revision="sc-v2" />
+
+  <!-- vendor proton -->
+  <project path="vendor/proton" name="vendor_proton" remote="ProtonPlus" revision="sc-v2" />
+  
+  <!-- vendor support -->
+  <project path="vendor/support" name="vendor_support" remote="ProtonPlus" revision="sc-v2" />
+
+  <!-- vendor QCOM-->  />
+  <project path="vendor/qcom/opensource/core-utils" name="vendor_qcom_opensource_core-utils" remote="ProtonPlus" revision="sc-v2" />
+  <project path="vendor/qcom/opensource/interfaces" name="vendor_qcom_opensource_interfaces" remote="ProtonPlus" revision="sc-v2"  />
+
+</manifest>

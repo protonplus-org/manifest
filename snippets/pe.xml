@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="PE" fetch="https://github.com/pixelexperience" revision="twelve" />
+  <remote name="PE-ssh" fetch="ssh://git@github.com/pixelexperience" revision="twelve" />
+
+  <!-- ant -->
+  <project path="external/ant-wireless/ant_client" name="external_ant-wireless_ant_client" remote="PE" revision="twelve" />
+  <project path="external/ant-wireless/ant_native" name="external_ant-wireless_ant_native"  remote="PE" revision="twelve"  />
+  <project path="external/ant-wireless/ant_service" name="external_ant-wireless_ant_service" remote="PE"  revision="twelve" />
+  <project path="external/ant-wireless/antradio-library" name="external_ant-wireless_antradio-library" remote="PE" revision="twelve"  />
+  <project path="external/ant-wireless/hidl" name="external_ant-wireless_hidl" remote="PE" revision="twelve" />
+
+  <!-- externel -->
+  <project path="external/exfatprogs" name="external_exfatprogs"  remote="PE" revision="twelve"/>
+  <project path="external/json-c" name="external_json-c" remote="PE"  revision="twelve"   />
+
+  <!--hardware -->
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/bootctrl" name="hardware_qcom-caf_bootctrl" remote="PE" revision="twelve"   />
+  <project path="hardware/qcom-caf/bt" name="hardware_qcom-caf_bt" remote="PE" revision="twelve"  />
+  <project path="hardware/qcom-caf/thermal" name="hardware_qcom-caf_thermal" remote="PE" revision="twelve"  />
+  <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" remote="PE" revision="twelve"  />
+
+  <!-- hals -->
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio"  remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8150-common/audio" name="hardware_qcom-caf_sm8150-common_audio" remote="PE" revision="twelve"  />
+  <project path="hardware/qcom-caf/sm8150-common/display" name="hardware_qcom-caf_sm8150-common_display" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8150-common/media" name="hardware_qcom-caf_sm8150-common_media" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8250/audio" name="hardware_qcom-caf_sm8250_audio" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8250/display" name="hardware_qcom-caf_sm8250_display" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8250/media" name="hardware_qcom-caf_sm8250_media" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8350/audio" name="hardware_qcom-caf_sm8350_audio" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8350/display" name="hardware_qcom-caf_sm8350_display" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/sm8350/media" name="hardware_qcom-caf_sm8350_media" remote="PE" revision="twelve" />
+  <project path="hardware/qcom-caf/wlan" name="hardware_qcom-caf_wlan" remote="PE" revision="twelve" />
+
+  <!-- packages -->
+  <project path="packages/resources/devicesettings"  name="packages_resources_devicesettings" remote="PE" revision="twelve" />
+
+  <!-- prebuilts --> 
+  <project path="prebuilts/tools-proton" name="prebuilts_tools-custom" remote="PE" revision="twelve"  clone-depth="1" />
+
+  <!-- system -->
+  <project path="system/qcom" name="system_qcom" remote="PE" revision="twelve"/>
+
+  <!-- vendor QCOM-->
+  <project path="vendor/codeaurora/telephony" name="vendor_codeaurora_telephony" remote="PE" revision="twelve" />
+  <project path="vendor/qcom/opensource/audio" name="vendor_qcom_opensource_audio" remote="PE" revision="twelve"  />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="vendor_qcom_opensource_audio-hal_st-hal" remote="PE" revision="twelve"  />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="vendor_qcom_opensource_commonsys-intf_display"  remote="PE" revision="twelve"  />
+  <project path="vendor/qcom/opensource/commonsys/display" name="vendor_qcom_opensource_commonsys_display" remote="PE" revision="twelve"/>
+  <project path="vendor/qcom/opensource/cryptfs_hw" name="vendor_qcom_opensource_cryptfs_hw" remote="PE" revision="twelve" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr" remote="PE" revision="twelve" />
+  <project path="vendor/qcom/opensource/dataservices" name="vendor_qcom_opensource_dataservices" remote="PE" revision="twelve"  />
+  <project path="vendor/qcom/opensource/display" name="vendor_qcom_opensource_display"  remote="PE" revision="twelve" />
+  <project path="vendor/qcom/opensource/commonsys/dpm" name="vendor_qcom_opensource_commonsys_dpm" remote="PE" revision="twelve"  />
+  <project path="vendor/qcom/opensource/fm-commonsys" name="vendor_qcom_opensource_fm-commonsys" remote="PE" revision="twelve"  />
+  <project path="vendor/qcom/opensource/healthd-ext" name="vendor_qcom_opensource_healthd-ext" remote="PE" revision="twelve"  />
+  <project path="vendor/qcom/opensource/libfmjni" name="vendor_qcom_opensource_libfmjni" remote="PE" revision="twelve"  />
+  <project path="vendor/qcom/opensource/power" name="vendor_qcom_opensource_power" remote="PE" revision="twelve" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="vendor_qcom_opensource_thermal-engine" remote="PE" revision="twelve"  />
+  <project path="vendor/qcom/opensource/usb" name="vendor_qcom_opensource_usb" remote="PE" revision="twelve"  />
+  <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" remote="PE" revision="twelve" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="vendor_qcom_opensource_wfd-commonsys" remote="PE" revision="twelve"  />
+
+</manifest>
