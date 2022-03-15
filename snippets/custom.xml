@@ -36,7 +36,7 @@
   </project>
 
   <!-- external repos -->
-  <project name="GrapheneOS/platform_external_Camera" path="external/Camera" remote="github" revision="12" />
+  <project name="GrapheneOS/platform_external_Camera" path="external/Camera" remote="github" revision="12.1" />
   <project name="external_e2fsprogs" path="external/e2fsprogs" remote="ProtonPlus" revision="sc"/>
   <project name="PixelExperience/external_exfatprogs" path="external/exfatprogs"  remote="github" revision="twelve"/>
   <project name="external_gptfdisk" path="external/gptfdisk" remote="ProtonPlus" revision="sc"/>
