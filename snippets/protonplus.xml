@@ -123,6 +123,7 @@
   <project path="system/core" name="system_core" remote="ProtonPlus" revision="sc-v2" />
   <project path="system/security" name="system_security" remote="ProtonPlus" revision="sc-v2" />
   <project path="system/sepolicy" name="system_sepolicy" remote="ProtonPlus" revision="sc-v2"/>
+  <project path="system/update_engine" name="system_update_engine" remote="ProtonPlus" revision="sc-v2"/>
   <project path="system/vold" name="system_vold" remote="ProtonPlus" revision="sc-v2" />
 
   <!-- tools -->
