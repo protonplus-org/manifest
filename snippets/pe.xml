@@ -22,6 +22,9 @@
   <project path="hardware/qcom-caf/vr" name="hardware_qcom-caf_vr" remote="PE" revision="twelve"  />
 
   <!-- hals -->
+  <project path="hardware/qcom-caf/msm8998/audio" name="hardware_qcom-caf_msm8998_audio" remote="PE" revision="twelve"  />
+  <project path="hardware/qcom-caf/msm8998/display" name="hardware_qcom-caf_msm8998_display" remote="PE" revision="twelve"  />
+  <project path="hardware/qcom-caf/msm8998/media" name="hardware_qcom-caf_msm8998_media" remote="PE" revision="twelve"  />
   <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_sm8150_audio"  remote="PE" revision="twelve" />
   <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_sm8150_display" remote="PE" revision="twelve" />
   <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_sm8150_media" remote="PE" revision="twelve" />
