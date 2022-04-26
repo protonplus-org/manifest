@@ -119,6 +119,7 @@
   <!-- sepolicy -->
   <project path="device/proton/sepolicy" name="device_proton_sepolicy"  remote="ProtonPlus" revision="sc-v2" />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="ProtonPlus" revision="sc-v2" />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="ProtonPlus" revision="sc-v2" />
   <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ProtonPlus" revision="sc-v2"/>
 
   <!-- system -->
