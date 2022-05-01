@@ -115,6 +115,7 @@
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="ProtonPlus" revision="sc-v2" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="ProtonPlus" revision="sc-v2" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ProtonPlus" revision="sc-v2"  />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ProtonPlus" revision="sc-v2"  />
 
   <!-- sepolicy -->
   <project path="device/proton/sepolicy" name="device_proton_sepolicy"  remote="ProtonPlus" revision="sc-v2" />
