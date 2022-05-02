@@ -66,6 +66,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="ProtonPlus" revision="sc-v2"  />
   <project path="frameworks/base" name="frameworks_base" remote="ProtonPlus" revision="sc-v2"  />
   <project path="frameworks/native" name="frameworks_native" remote="ProtonPlus" revision="sc-v2"  />
+  <project path="frameworks/opt/telephony" name="frameworks_opt_telephony" remote="ProtonPlus" revision="sc-v2"  />
 
   <!-- hardware -->
   <project path="hardware/google/pixel" name="hardware_google_pixel" remote="ProtonPlus" revision="sc-v2" />
@@ -114,6 +115,7 @@
   <project path="packages/modules/Permission" name="packages_modules_Permission"  remote="ProtonPlus" revision="sc-v2" />
   <project path="packages/modules/Wifi" name="packages_modules_Wifi" remote="ProtonPlus" revision="sc-v2" />
   <project path="packages/providers/DownloadProvider" name="packages_providers_DownloadProvider" remote="ProtonPlus" revision="sc-v2" />
+  <project path="packages/providers/TelephonyProvider" name="packages_providers_TelephonyProvider" remote="ProtonPlus" revision="sc-v2" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ProtonPlus" revision="sc-v2"  />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ProtonPlus" revision="sc-v2"  />
 
