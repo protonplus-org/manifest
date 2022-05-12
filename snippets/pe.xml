@@ -43,6 +43,7 @@
   <project path="packages/resources/devicesettings"  name="packages_resources_devicesettings" remote="PE" revision="twelve" />
 
   <!-- prebuilts --> 
+  <project path="prebuilts/extract-tools" name="prebuilts_extract-tools" remote="PE" revision="twelve"  clone-depth="1" />
   <project path="prebuilts/tools-proton" name="prebuilts_tools-custom" remote="PE" revision="twelve"  clone-depth="1" />
 
   <!-- system -->
