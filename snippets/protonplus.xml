@@ -88,7 +88,10 @@
       <linkfile src="os_pickup_qssi.bp" dest="hardware/qcom-caf/sm8350/Android.bp" />
       <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
   </project>
-
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_audio"  remote="ProtonPlus" revision="sc-v2-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_display" remote="ProtonPlus" revision="sc-v2-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_media" remote="ProtonPlus" revision="sc-v2-sm8150" />
+  
   <!-- libcore -->
   <project path="libcore" name="libcore" remote="ProtonPlus" revision="sc-v2"/>
   
