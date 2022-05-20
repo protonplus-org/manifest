@@ -144,9 +144,6 @@
   <!-- vendor gms -->
   <project path="vendor/gms" name="roku-senpai/vendor_gms" remote="gitlab" revision="sc-v2" />
 
-  <!-- vendor lawnicons -->
-  <project path="vendor/lawnicons" name="vendor_lawnicons" remote="ProtonPlus" revision="sc-v2" />
-
   <!-- vendor proton -->
   <project path="vendor/proton" name="vendor_proton" remote="ProtonPlus" revision="sc-v2" />
   
