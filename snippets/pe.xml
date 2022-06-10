@@ -13,6 +13,7 @@
   <!-- externel -->
   <project path="external/exfatprogs" name="external_exfatprogs"  remote="PE" revision="twelve"/>
   <project path="external/json-c" name="external_json-c" remote="PE"  revision="twelve"   />
+  <project path="external/tinyxml" name="external_tinyxml" remote="PE"  revision="twelve" />
 
   <!--hardware -->
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="PE" revision="twelve" />
