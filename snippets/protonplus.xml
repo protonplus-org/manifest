@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote name="github" fetch="https://github.com" />
+  <remote name="github-ssh" fetch="ssh://git@github.com" />
+  <remote name="gitlab" fetch="https://gitlab.com" />
+  <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
+  <remote name="ProtonPlus" fetch="https://github.com/ProtonPlus-ORG" revision="tm" />
+  <remote name="ProtonPlus-ssh" fetch="ssh://git@github.com/ProtonPlus-ORG" revision="tm" />
+
+  <!-- art -->
+  <project path="art" name="art" remote="ProtonPlus" />
+
+  <!-- bionic -->
+  <project path="bionic" name="bionic" remote="ProtonPlus" />
+
+  <!-- bootable  -->
+  <project path="bootable/recovery" name="bootable_recovery" remote="ProtonPlus" />
+
+  <!-- build -->
+  <project path="build/make" name="build_make" remote="ProtonPlus" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project path="build/soong" name="build_soong" remote="ProtonPlus" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- external lineage -->
+  <project path="external/bash" name="external_bash" remote="ProtonPlus" />
+  <project path="external/htop" name="external_htop" remote="ProtonPlus" />
+  <project path="external/libncurses" name="external_libncurses" remote="ProtonPlus" />
+  <project path="external/nano" name="external_nano" remote="ProtonPlus" />
+  <project path="external/openssh" name="external_openssh" remote="ProtonPlus" />
+  <project path="external/p7zip" name="external_p7zip"  remote="ProtonPlus" />
+  <project path="external/pigz" name="external_pigz" remote="ProtonPlus" />
+  <project path="external/rsync" name="external_rsync"  remote="ProtonPlus" />
+  <project path="external/vim" name="external_vim" remote="ProtonPlus" />
+  <project path="external/zip" name="external_zip" remote="ProtonPlus" />
+
+  <!-- externel -->
+  <project path="external/e2fsprogs" name="external_e2fsprogs" remote="ProtonPlus" />
+  <project path="external/gptfdisk" name="external_gptfdisk" remote="ProtonPlus" />
+  <project path="external/mksh" name="external_mksh" remote="ProtonPlus" />
+  <project path="external/selinux" name="external_selinux" remote="ProtonPlus" />
+  <project path="external/tinycompress" name="external_tinycompress" remote="ProtonPlus" />
+
+  <!-- frameworks  -->
+  <project path="frameworks/av" name="frameworks_av" remote="ProtonPlus" />
+  <project path="frameworks/base" name="frameworks_base" remote="ProtonPlus" />
+  <project path="frameworks/native" name="frameworks_native" remote="ProtonPlus" />
+
+  <!-- hardware -->
+  <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="ProtonPlus"  />
+  <project path="hardware/interfaces" name="hardware_interfaces" remote="ProtonPlus" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="ProtonPlus" />
+  <project path="hardware/xiaomi" name="hardware_xiaomi" remote="ProtonPlus"  />
+
+  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_audio" remote="ProtonPlus" revision="tm-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_display"  remote="ProtonPlus" revision="tm-sm8150" />
+  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_media" remote="ProtonPlus" revision="tm-sm8150" />
+
+  <!-- libcore -->
+  <project path="libcore" name="libcore" remote="ProtonPlus" />
+
+  <!-- packages -->
+  <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ProtonPlus" />
+  <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ProtonPlus" />
+  <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ProtonPlus" />
+  <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ProtonPlus" />
+  <project path="packages/modules/Permission" name="packages_modules_Permission"  remote="ProtonPlus" />
+  <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ProtonPlus"  />
+  <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ProtonPlus"  />
+  <project path="packages/apps/Updater" name="packages_apps_Updater" remote="ProtonPlus"  />
+  
+  <!-- sepolicy -->
+  <project path="device/proton/sepolicy" name="device_proton_sepolicy"  remote="ProtonPlus"  />
+  <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="ProtonPlus"  />
+  <project path="device/qcom/sepolicy-legacy-um" name="device_qcom_sepolicy-legacy-um" remote="ProtonPlus"  />
+  <project path="device/qcom/sepolicy" name="device_qcom_sepolicy" remote="ProtonPlus" />
+
+  <!-- system -->
+  <project path="system/core" name="system_core" remote="ProtonPlus" />
+  <project path="system/libziparchive" name="system_libziparchive" remote="ProtonPlus" />
+  <project path="system/security" name="system_security" remote="ProtonPlus" />
+  <project path="system/libhidl" name="system_libhidl" remote="ProtonPlus" />
+  <project path="system/sepolicy" name="system_sepolicy" remote="ProtonPlus" />
+  <project path="system/update_engine" name="system_update_engine" remote="ProtonPlus" />
+  <project path="system/vold" name="system_vold" remote="ProtonPlus" />
+
+  <!-- vendor gms -->
+  <project path="vendor/gms" name="roku-senpai/vendor_gms" remote="gitlab" revision="tm" />
+
+  <!-- vendor -->
+  <project path="vendor/proton" name="vendor_proton" remote="ProtonPlus"  />
+
+  <!-- vendor support -->
+  <project path="vendor/support" name="vendor_support" remote="ProtonPlus"  />
+
+  <!-- manifest -->
+  <project path="manifest" name="manifest" remote="ProtonPlus"  />
+
+</manifest>
