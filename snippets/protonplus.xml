@@ -93,6 +93,9 @@
   <project path="system/update_engine" name="system_update_engine" remote="ProtonPlus" />
   <project path="system/vold" name="system_vold" remote="ProtonPlus" />
 
+  <!-- tools repos -->
+  <project path="tools/extract-utils" name="tools_extract-utils" remote="ProtonPlus" />
+
   <!-- vendor gms -->
   <project path="vendor/gms" name="roku-senpai/vendor_gms" remote="gitlab" revision="tm" />
 

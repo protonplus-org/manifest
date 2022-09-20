@@ -68,9 +68,6 @@
   <!-- system -->
   <project path="system/qcom" name="android_system_qcom" remote="arrow"/>
 
-  <!-- tools repos -->
-  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="arrow" />
-
   <!-- vendor repos -->
   <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" remote="arrow" />
   <project path="vendor/nxp/nfc" name="android_vendor_nxp_nfc" remote="arrow" />
