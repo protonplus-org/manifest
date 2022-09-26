@@ -46,9 +46,11 @@
   <!-- externel -->
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="ProtonPlus" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="ProtonPlus" />
+  <project path="external/jemalloc_new" name="external_jemalloc_new" remote="ProtonPlus"  />
   <project path="external/mksh" name="external_mksh" remote="ProtonPlus" />
   <project path="external/selinux" name="external_selinux" remote="ProtonPlus" />
   <project path="external/tinycompress" name="external_tinycompress" remote="ProtonPlus" />
+  <project path="external/zlib-ng" name="external_zlib-ng" remote="ProtonPlus"  />
 
   <!-- frameworks  -->
   <project path="frameworks/av" name="frameworks_av" remote="ProtonPlus" />
