@@ -130,4 +130,7 @@
   <remove-project name="platform/system/update_engine" />
   <remove-project name="platform/system/vold" />
 
+  <!-- system tools-->
+  <remove-project name="platform/system/tools/mkbootimg" />
+
 </manifest>
