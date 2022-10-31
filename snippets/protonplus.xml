@@ -68,6 +68,7 @@
 
   <!-- packages -->
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ProtonPlus" />
+  <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv"  remote="ProtonPlus" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ProtonPlus" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ProtonPlus" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ProtonPlus" />
