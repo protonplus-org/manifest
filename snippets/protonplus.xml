@@ -63,10 +63,6 @@
   <project path="hardware/libhardware" name="hardware_libhardware" remote="ProtonPlus" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="ProtonPlus"  />
 
-  <project path="hardware/qcom-caf/sm8150/audio" name="hardware_qcom-caf_audio" remote="ProtonPlus" revision="tm-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/display" name="hardware_qcom-caf_display"  remote="ProtonPlus" revision="tm-sm8150" />
-  <project path="hardware/qcom-caf/sm8150/media" name="hardware_qcom-caf_media" remote="ProtonPlus" revision="tm-sm8150" />
-
   <!-- libcore -->
   <project path="libcore" name="libcore" remote="ProtonPlus" />
 
