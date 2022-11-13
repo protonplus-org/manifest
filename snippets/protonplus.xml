@@ -6,6 +6,7 @@
   <remote name="gitlab" fetch="https://gitlab.com" />
   <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
   <remote name="ProtonPlus" fetch="https://github.com/ProtonPlus-ORG" revision="tm" />
+  <remote name="ProtonPlus-gitlab" fetch="https://gitlab.com/protonplus-org" revision="tm" />
   <remote name="ProtonPlus-ssh" fetch="ssh://git@github.com/ProtonPlus-ORG" revision="tm" />
 
   <!-- art -->
@@ -44,6 +45,7 @@
   <project path="external/zip" name="external_zip" remote="ProtonPlus" />
 
   <!-- externel -->
+  <project path="external/faceunlock" name="external_faceunlock" remote="ProtonPlus-gitlab" />
   <project path="external/e2fsprogs" name="external_e2fsprogs" remote="ProtonPlus" />
   <project path="external/gptfdisk" name="external_gptfdisk" remote="ProtonPlus" />
   <project path="external/jemalloc_new" name="external_jemalloc_new" remote="ProtonPlus"  />
@@ -67,6 +69,7 @@
   <project path="libcore" name="libcore" remote="ProtonPlus" />
 
   <!-- packages -->
+  <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="ProtonPlus-gitlab" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ProtonPlus" />
   <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv"  remote="ProtonPlus" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ProtonPlus" />
