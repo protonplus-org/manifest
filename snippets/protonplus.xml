@@ -74,6 +74,7 @@
   <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv"  remote="ProtonPlus" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ProtonPlus" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ProtonPlus" />
+  <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="ProtonPlus" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ProtonPlus" />
   <project path="packages/modules/Permission" name="packages_modules_Permission"  remote="ProtonPlus" />
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ProtonPlus"  />
