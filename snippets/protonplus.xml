@@ -64,6 +64,7 @@
   <project path="hardware/interfaces" name="hardware_interfaces" remote="ProtonPlus" />
   <project path="hardware/libhardware" name="hardware_libhardware" remote="ProtonPlus" />
   <project path="hardware/xiaomi" name="hardware_xiaomi" remote="ProtonPlus"  />
+  <project path="hardware/custom/compat" name="hardware_custom_compat" remote="ProtonPlus" />
 
   <!-- libcore -->
   <project path="libcore" name="libcore" remote="ProtonPlus" />
@@ -80,6 +81,7 @@
   <project path="packages/services/Telecomm" name="packages_services_Telecomm" remote="ProtonPlus"  />
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ProtonPlus"  />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="ProtonPlus"  />
+  <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="ProtonPlus" />
   
   <!-- sepolicy -->
   <project path="device/proton/sepolicy" name="device_proton_sepolicy"  remote="ProtonPlus"  />
