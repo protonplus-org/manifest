@@ -71,6 +71,7 @@
 
   <!-- packages -->
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="ProtonPlus-gitlab" />
+  <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ProtonPlus" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ProtonPlus" />
   <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv"  remote="ProtonPlus" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ProtonPlus" />
