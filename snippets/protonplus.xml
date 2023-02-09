@@ -58,6 +58,7 @@
   <project path="frameworks/av" name="frameworks_av" remote="ProtonPlus" />
   <project path="frameworks/base" name="frameworks_base" remote="ProtonPlus" />
   <project path="frameworks/native" name="frameworks_native" remote="ProtonPlus" />
+  <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="ProtonPlus" />
 
   <!-- hardware -->
   <project path="hardware/custom/interfaces" name="hardware_custom_interfaces" remote="ProtonPlus"  />
@@ -83,7 +84,8 @@
   <project path="packages/services/Telephony" name="packages_services_Telephony" remote="ProtonPlus"  />
   <project path="packages/apps/Updater" name="packages_apps_Updater" remote="ProtonPlus"  />
   <project path="packages/apps/Aperture" name="packages_apps_Aperture" remote="ProtonPlus" />
-  
+  <project path="packages/apps/ThemePicker" name="packages_apps_ThemePicker" remote="ProtonPlus" />
+
   <!-- sepolicy -->
   <project path="device/proton/sepolicy" name="device_proton_sepolicy"  remote="ProtonPlus"  />
   <project path="device/qcom/sepolicy_vndr" name="device_qcom_sepolicy_vndr"  remote="ProtonPlus"  />
