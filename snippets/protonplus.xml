@@ -5,7 +5,7 @@
   <remote name="github-ssh" fetch="ssh://git@github.com" />
   <remote name="gitlab" fetch="https://gitlab.com" />
   <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
-  <remote name="ProtonPlus" fetch="https://github.com/ProtonPlus-ORG" revision="tm" />
+  <remote name="ProtonPlus" fetch="https://github.com/ProtonPlus-ORG" revision="tm-qpr2" />
   <remote name="ProtonPlus-gitlab" fetch="https://gitlab.com/protonplus-org" revision="tm" />
   <remote name="ProtonPlus-ssh" fetch="ssh://git@github.com/ProtonPlus-ORG" revision="tm" />
 
@@ -56,7 +56,7 @@
 
   <!-- frameworks  -->
   <project path="frameworks/av" name="frameworks_av" remote="ProtonPlus" />
-  <project path="frameworks/base" name="frameworks_base" remote="ProtonPlus" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="ProtonPlus" />
   <project path="frameworks/native" name="frameworks_native" remote="ProtonPlus" />
   <project path="frameworks/libs/systemui" name="frameworks_libs_systemui" remote="ProtonPlus" />
 

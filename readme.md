@@ -3,7 +3,7 @@
 First, make sure you have an [Android build environment](https://source.android.com/setup/build/initializing) and the [repo tool](https://source.android.com/setup/build/downloading) set up. After that, run the following commands:
 
 ```
-repo init -u https://github.com/ProtonPlus-ORG/manifest -b tm
+repo init -u https://github.com/ProtonPlus-ORG/manifest -b tm-qpr2
 ```
 
 ```
