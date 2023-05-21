@@ -6,7 +6,7 @@
   <remote name="gitlab" fetch="https://gitlab.com" />
   <remote name="gitlab-ssh" fetch="ssh://git@gitlab.com" />
   <remote name="ProtonPlus" fetch="https://github.com/ProtonPlus-ORG" revision="tm-qpr2" />
-  <remote name="ProtonPlus-gitlab" fetch="https://gitlab.com/protonplus-org" revision="tm" />
+  <remote name="ProtonPlus-gitlab" fetch="https://gitlab.com/protonplus-org" revision="tm-qpr2" />
   <remote name="ProtonPlus-ssh" fetch="ssh://git@github.com/ProtonPlus-ORG" revision="tm" />
 
   <!-- art -->
@@ -108,7 +108,7 @@
   <project path="tools/extract-utils" name="tools_extract-utils" remote="ProtonPlus" />
 
   <!-- vendor gms -->
-  <project path="vendor/gms" name="vendor_gms" remote="ProtonPlus-gitlab" revision="tm" />
+  <project path="vendor/gms" name="vendor_gms" remote="ProtonPlus-gitlab" revision="tm-qpr2" />
 
   <!-- vendor -->
   <project path="vendor/proton" name="vendor_proton" remote="ProtonPlus"  />
