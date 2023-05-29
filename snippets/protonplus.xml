@@ -71,12 +71,23 @@
   <project path="libcore" name="libcore" remote="ProtonPlus" />
 
   <!-- packages -->
+  <project path="packages/apps/Contacts" name="packages_apps_Contacts" remote="ProtonPlus" />
+  <project path="packages/apps/DeskClock" name="packages_apps_DeskClock" remote="ProtonPlus" />
+  <project path="packages/apps/Dialer" name="packages_apps_Dialer" remote="ProtonPlus" />
+  <project path="packages/apps/DocumentsUI" name="packages_apps_DocumentsUI" remote="ProtonPlus" />
+  <project path="packages/apps/Eleven" name="packages_apps_Eleven" remote="ProtonPlus" />
+  <project path="packages/apps/Etar" name="packages_apps_Etar" remote="ProtonPlus" />
+  <project path="packages/apps/ExactCalculator" name="packages_apps_ExactCalculator" remote="ProtonPlus" />
   <project path="packages/apps/FaceUnlockService" name="packages_apps_FaceUnlockService" remote="ProtonPlus-gitlab" />
+  <project path="packages/apps/Gallery2" name="packages_apps_Gallery2" remote="ProtonPlus" />
+  <project path="packages/apps/Jelly" name="packages_apps_Jelly" remote="ProtonPlus" />
   <project path="packages/apps/Launcher3" name="packages_apps_Launcher3" remote="ProtonPlus" />
+  <project path="packages/apps/Messaging" name="packages_apps_Messaging" remote="ProtonPlus" />
   <project path="packages/apps/Nfc" name="packages_apps_Nfc" remote="ProtonPlus" />
   <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv"  remote="ProtonPlus" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ProtonPlus" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ProtonPlus" />
+  <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="ProtonPlus" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="ProtonPlus" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ProtonPlus" />
   <project path="packages/modules/Permission" name="packages_modules_Permission"  remote="ProtonPlus" />
