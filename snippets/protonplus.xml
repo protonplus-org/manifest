@@ -109,6 +109,7 @@
   <project path="system/security" name="system_security" remote="ProtonPlus" />
   <project path="system/libhidl" name="system_libhidl" remote="ProtonPlus" />
   <project path="system/sepolicy" name="system_sepolicy" remote="ProtonPlus" />
+  <project path="system/timezone" name="system_timezone" remote="ProtonPlus-gitlab" />
   <project path="system/update_engine" name="system_update_engine" remote="ProtonPlus" />
   <project path="system/vold" name="system_vold" remote="ProtonPlus" />
 
