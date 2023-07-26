@@ -86,6 +86,7 @@
   <project path="packages/apps/RepainterServicePriv" name="packages_apps_RepainterServicePriv"  remote="ProtonPlus" />
   <project path="packages/apps/Settings" name="packages_apps_Settings" remote="ProtonPlus" />
   <project path="packages/apps/SettingsIntelligence" name="packages_apps_SettingsIntelligence" remote="ProtonPlus" />
+  <project path="packages/apps/WallpaperPicker2" name="packages_apps_WallpaperPicker2" remote="ProtonPlus" />
   <project path="packages/inputmethods/LatinIME" name="packages_inputmethods_LatinIME" remote="ProtonPlus" />
   <project path="packages/modules/Bluetooth" name="packages_modules_Bluetooth" remote="ProtonPlus" />
   <project path="packages/modules/Connectivity" name="packages_modules_Connectivity" remote="ProtonPlus" />
